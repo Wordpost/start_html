@@ -5,3 +5,6 @@
 `npm i`
 
 `bower install`
+
+-- Start project: gulp
+-- Build project: gulp build
