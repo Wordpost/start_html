@@ -378,6 +378,7 @@ address {
   margin: 0;
 }
 
+blockquote,
 ol,
 ul,
 dl {
@@ -452,7 +453,7 @@ h6,
   font-weight: 500;
   line-height: 1.1;
 
-  margin: 0 0 5px;
+  margin: 0 0 1rem;
 
   color: inherit;
 }
@@ -519,6 +520,16 @@ small,
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ol,
+.content ul {
+  margin-bottom: 1rem; 
+  margin-left: 2rem;
 }
 
 .container {
@@ -1863,6 +1874,8 @@ small,
   font-weight: normal;
   line-height: 1.25;
 
+  position: relative;
+
   display: inline-block;
 
   padding: .5rem 1rem;
@@ -1888,6 +1901,8 @@ small,
   outline: 0;
 }
 .btn:hover {
+  top: 2px; 
+
   text-decoration: none;
 }
 .btn:active,
