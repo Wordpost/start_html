@@ -7,8 +7,6 @@
 
 `Install gulp: npm install --global gulp-cli`
 
-`npm install --save-dev gulp`
-
 `Install bower: npm install -g bower`
 
 ### Instal project

@@ -10,7 +10,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
   del           = require('del'),               // Подключаем библиотеку для удаления файлов и папок
   imagemin      = require('gulp-imagemin'),     // Подключаем библиотеку для работы с изображениями
   pngquant      = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-  //cache         = require('gulp-cache'),        // Подключаем библиотеку кеширования
+  cache         = require('gulp-cache'),        // Подключаем библиотеку кеширования
   autoprefixer  = require('gulp-autoprefixer'), // Подключаем библиотеку для автоматического добавления префиксов
   spritesmith   = require('gulp.spritesmith');  // Спрайт
 
