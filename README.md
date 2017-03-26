@@ -5,7 +5,7 @@
 
 `Install git https://git-scm.com/download/win`
 
-`Install gulp: npm install --global gulp-cli`
+`Install gulp: npm install --global gulp`
 
 `Install bower: npm install -g bower`
 
