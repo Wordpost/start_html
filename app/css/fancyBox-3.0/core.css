@@ -3,8 +3,8 @@
 }
 
 .fancybox-enabled body {
-	overflow: visible;
-	touch-action: none;
+    overflow: visible;
+	height: 100%;
 }
 
 .fancybox-container {
@@ -110,6 +110,7 @@
 	margin: 0;
 	z-index: 99993;
 	backface-visibility: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .fancybox-slide {
@@ -127,7 +128,6 @@
 	text-align: center;
 	z-index: 99994;
 	-webkit-overflow-scrolling: touch;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .fancybox-slide::before {
@@ -276,26 +276,40 @@
 
 .fancybox-close-small {
 	position: absolute;
-	top: 4px;
-	right: 4px;
+	top: 0;
+	right: 0;
+	width: 44px;
+	height: 44px;
 	padding: 0;
 	margin: 0;
+	border: 0;
+	border-radius: 0;
+	outline: none;
+	background: transparent;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.fancybox-close-small:after {
+	content: '×';
+	position: absolute;
+	top : 5px;
+	right: 5px;
 	width: 30px;
 	height: 30px;
-	font: 21px/1 Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
 	color: #888;
 	font-weight: 300;
 	text-align: center;
 	border-radius: 50%;
 	border-width: 0;
-	cursor: pointer;
 	background: #fff;
 	transition: background .2s;
 	box-sizing: border-box;
 	z-index: 2;
 }
 
-.fancybox-close-small:focus {
+.fancybox-close-small:focus:after {
 	outline: 1px dotted #888;
 }
 
@@ -305,7 +319,7 @@
 	background: transparent;
 }
 
-.fancybox-close-small:hover {
+.fancybox-close-small:hover:after {
 	color: #555;
 	background: #eee;
 }

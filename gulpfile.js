@@ -6,7 +6,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
   browserSync   = require('browser-sync'),      // Подключаем Browser Sync
   concat        = require('gulp-concat'),       // Подключаем gulp-concat (для конкатенации файлов, объединения)
   uglifyjs      = require('gulp-uglifyjs'),     // Подключаем gulp-uglifyjs (для сжатия JS)
-  html          = require('gulp-rigger'),       //работа с инклюдами в html и js
+  html          = require('gulp-file-include'), // работа с инклюдами в html и js
   del           = require('del'),               // Подключаем библиотеку для удаления файлов и папок
   imagemin      = require('gulp-imagemin'),     // Подключаем библиотеку для работы с изображениями
   pngquant      = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
@@ -76,26 +76,15 @@ var gulp        = require('gulp'),              // Подключаем Gulp
       .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
   });
 
-
 // таск для билдинга html
-gulp.task('html', function () {
-  gulp.src('app/html/*.html') //Выберем файлы по нужному пути [^_]*.html
-  .pipe(html()) //Прогоним через html
-  .pipe(gulp.dest('app')) //выгрузим их в папку build
-  .pipe(browserSync.reload({  // Обновляем CSS на странице при изменении
-    stream: true
-  }));
-});
-
-// // таск для билдинга html
-//   gulp.task('html', function() {
-//     return gulp.src('app/html/*.html')
-//       .pipe(html({ prefix: '@@', basepath: '@file' }))
-//       .pipe(gulp.dest('app'))
-//       .pipe(browserSync.reload({  // Обновляем CSS на странице при изменении
-//         stream: true
-//       }));
-//   });
+  gulp.task('html', function() {
+    return gulp.src('app/html/*.html')
+      .pipe(html({ prefix: '@@', basepath: '@file' }))
+      .pipe(gulp.dest('app'))
+      .pipe(browserSync.reload({  // Обновляем CSS на странице при изменении
+        stream: true
+      }));
+  });
 
 // Чистка перед сборкой проекта
   gulp.task('clean', function () {
