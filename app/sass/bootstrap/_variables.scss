@@ -272,22 +272,25 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
+$font-family-base:       -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-heading:       $font-family-base !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:    12px !default;
-$font-size-root-sm: 13px !default;
-$font-size-root-md: 14px !default;
-$font-size-root-lg: 15px !default;
-$font-size-root-xl: 16px !default;
+$font-size-root:     12px !default;
+$font-size-root-sm:  13px !default;
+$font-size-root-md:  14px !default;
+$font-size-root-lg:  15px !default;
+$font-size-root-xl:  16px !default;
+$font-size-rem-size: $font-size-root-xl !default;
 
-$font-size-base: 1rem !default;
-$font-size-lg:   1.25rem !default;
-$font-size-sm:   .875rem !default;
-$font-size-xs:   .75rem !default;
+
+$font-size-base:  1rem !default;
+$font-size-lg:    1.25rem !default;
+$font-size-sm:    .875rem !default;
+$font-size-xs:    .75rem !default;
+$small-font-size: 80% !default;
 
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
@@ -300,21 +303,6 @@ $font-size-h3: 1.75rem !default;
 $font-size-h4: 1.5rem !default;
 $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
-
-$headings-margin-bottom: 1rem !default;
-$headings-font-family:   inherit !default;
-$headings-font-weight:   500 !default;
-$headings-line-height:   1.1 !default;
-$headings-color:         inherit !default;
-
-$small-font-size: 80% !default;
-
-$text-muted: $gray-light !default;
-
-$hr-border-color: rgba($black,.1) !default;
-$hr-border-width: $border-width !default;
-
-$list-inline-padding: 5px !default;
 
 
 // 10. Components
@@ -340,20 +328,13 @@ $transition-collapse:    height .35s ease !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  1rem !default;
-$btn-padding-y:                  .5rem !default;
-$btn-line-height:                $line-height-base !default;
-$btn-font-weight:                $font-weight-normal !default;
-$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
-$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
-
 $btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $black !default;
 $btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-border:           $gray-light !default;
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
@@ -373,20 +354,14 @@ $btn-danger-border:              $btn-danger-bg !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
+$btn-padding-x:                    .5rem !default;
+$btn-padding-y:                    .25rem !default;
+
 $btn-padding-x-sm:               .5rem !default;
 $btn-padding-y-sm:               .25rem !default;
 
 $btn-padding-x-lg:               1.5rem !default;
 $btn-padding-y-lg:               .75rem !default;
-
-$btn-block-spacing-y:            .5rem !default;
-$btn-toolbar-margin:             .5rem !default;
-
-// Allows for customizing button radius independently from global border radius
-$btn-border-radius:              $border-radius !default;
-$btn-border-radius-lg:           $border-radius-lg !default;
-$btn-border-radius-sm:           $border-radius-sm !default;
-
 $btn-transition:                 all .2s ease-in-out !default;
 
 
@@ -455,7 +430,7 @@ $navbar-padding-y:                  ($spacer / 2) !default;
 $navbar-toggler-padding-x:           .75rem !default;
 $navbar-toggler-padding-y:           .25rem !default;
 $navbar-toggler-font-size:           $font-size-lg !default;
-$navbar-toggler-border-radius:       $btn-border-radius !default;
+$navbar-toggler-border-radius:       $border-radius !default;
 
 $navbar-black-color:          rgba($white,.5) !default;
 $navbar-black-hover-color:     rgba($white,.75) !default;
@@ -490,7 +465,6 @@ $modal-content-xs-box-shadow:    0 3px 9px rgba($black,.5) !default;
 $modal-content-sm-up-box-shadow: 0 5px 15px rgba($black,.5) !default;
 
 $modal-backdrop-bg:           $black !default;
-$modal-backdrop-opacity:      .5 !default;
 $modal-header-border-color:   $gray-light !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 $modal-header-border-width:   $modal-content-border-width !default;
@@ -500,8 +474,6 @@ $modal-header-padding:        15px !default;
 $modal-lg:                    800px !default;
 $modal-md:                    500px !default;
 $modal-sm:                    300px !default;
-
-$modal-transition:            transform .3s ease-out !default;
 
 
 // 34. Close

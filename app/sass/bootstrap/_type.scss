@@ -1,10 +1,10 @@
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 0 0 $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
+  margin: 0 0 1rem;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: $body-color;
 }
 
 h1, .h1 { font-size: $font-size-h1; }
@@ -37,9 +37,7 @@ small,
     display: block;
   }
 }
-.flex {
-  display: flex;
-}
+
 .content {
   p {
     margin-bottom: 1rem;

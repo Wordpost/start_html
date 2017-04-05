@@ -1,14 +1,12 @@
 .close {
   float: right;
-  font-size: ($font-size-base * 1.5);
-  font-weight: $close-font-weight;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-normal;
   line-height: 1;
-  color: $close-color;
-  text-shadow: $close-text-shadow;
+  color: $gray;
   opacity: .5;
 
   &:hover {
-    color: $close-color;
     text-decoration: none;
     cursor: pointer;
     opacity: .75;
