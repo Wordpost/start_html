@@ -11,7 +11,7 @@
 
 ### Instal project
 
-`git clone https://github.com/Wordpost/start_html.git`
+`git clone https://github.com/Wordpost/weban.git`
 
 `npm i`
 
