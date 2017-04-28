@@ -135,7 +135,7 @@ $enable-print-styles:       false !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer:   10px !default;
+$spacer:   1rem !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 $spacers: (
@@ -143,45 +143,33 @@ $spacers: (
     x: 0,
     y: 0
   ),
+  1: (
+    x: ($spacer-x * .25),
+    y: ($spacer-y * .25)
+  ),
+  2: (
+    x: ($spacer-x * .5),
+    y: ($spacer-y * .5)
+  ),
+  3: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  4: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
   5: (
-    x: ($spacer-x - 5),
-    y: ($spacer-y - 5)
+    x: ($spacer-x * 2),
+    y: ($spacer-y * 2)
   ),
-  10: (
-    x: ($spacer),
-    y: ($spacer)
+  6: (
+    x: ($spacer-x * 2.5),
+    y: ($spacer-y * 2.5)
   ),
-  15: (
-    x: ($spacer-x + 5),
-    y: ($spacer-y + 5)
-  ),
-  20: (
-    x: ($spacer-x + 10),
-    y: ($spacer-y + 10)
-  ),
-  25: (
-    x: ($spacer-x + 15),
-    y: ($spacer-y + 15)
-  ),
-  30: (
-    x: ($spacer-x + 20),
-    y: ($spacer-y + 20)
-  ),
-  35: (
-    x: ($spacer-x + 25),
-    y: ($spacer-y + 25)
-  ),
-  40: (
-    x: ($spacer-x + 30),
-    y: ($spacer-y + 30)
-  ),
-  45: (
-    x: ($spacer-x + 35),
-    y: ($spacer-y + 35)
-  ),
-  50: (
-    x: ($spacer-x + 40),
-    y: ($spacer-y + 40)
+  7: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
   )
 ) !default;
 $border-width: 1px !default;

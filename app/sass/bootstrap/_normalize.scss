@@ -224,59 +224,6 @@ template {
   display: none;
 }
 
-input[placeholder] {
-  text-overflow:ellipsis;
-}
-
-input::-webkit-input-placeholder {
-  color: $input-color-placeholder !important;
-}
-
-input::-moz-placeholder {
-  color: $input-color-placeholder !important;
-  opacity: 1;
-}
-
-input:-ms-input-placeholder {
-  color: $input-color-placeholder !important;
-}
-
-textarea::-webkit-input-placeholder {
-  color: $input-color-placeholder !important;
-}
-
-textarea::-moz-placeholder {
-  color: $input-color-placeholder !important;
-  opacity: 1;
-}
-
-textarea:-ms-input-placeholder {
-  color: $input-color-placeholder !important;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: transparent !important;
-}
-
-input:focus::-moz-placeholder {
-  color: transparent !important;
-}
-
-input:focus:-ms-input-placeholder {
-  color: transparent !important;
-}
-
-textarea:focus::-webkit-input-placeholder {
-  color: transparent !important;
-}
-
-textarea:focus::-moz-placeholder {
-  color: transparent !important;
-}
-
-textarea:focus:-ms-input-placeholder {
-  color: transparent !important;
-}
 
 @at-root {
   @-ms-viewport { width: device-width; }

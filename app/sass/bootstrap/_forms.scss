@@ -21,7 +21,6 @@
 
   border-radius: $border-radius;
 
-  @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
   // Unstyle the caret on `<select>`s in IE10+.
@@ -30,15 +29,8 @@
     border: 0;
   }
 
-  // Customize the `:focus` state to imitate native WebKit styles.
-  @include tab-focus();
+  // Customize the `:focus` state to imitate native WebKit styles
 
-  // Placeholder
-  &::placeholder {
-    color: $input-color-placeholder;
-    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
-    opacity: 1;
-  }
 
   // Disabled and read-only inputs
   //
@@ -55,6 +47,60 @@
   &:disabled {
     cursor: default;
   }
+}
+
+input[placeholder] {
+  text-overflow:ellipsis;
+}
+
+input::-webkit-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+input::-moz-placeholder {
+  color: $input-color-placeholder !important;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+textarea::-moz-placeholder {
+  color: $input-color-placeholder !important;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: $input-color-placeholder !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent !important;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
 }
 
 select.form-control {
