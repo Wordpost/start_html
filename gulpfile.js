@@ -22,7 +22,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
         includePaths: require('node-bourbon').includePaths
       })) // Преобразуем Sass в CSS посредством gulp-sass
       .pipe(autoprefixer( { // Создаем префиксы
-        browsers: ['last 20 versions', '> 1%', 'ie 9'],
+        browsers: ['last 20 versions', '> 1%', 'ie 10'],
         cascade: true
       } ) )
       //.pipe(cleanCSS())
