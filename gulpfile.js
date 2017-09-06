@@ -62,14 +62,19 @@ var gulp        = require('gulp'),              // Подключаем Gulp
 // Создаем таск для объединения js
   gulp.task('js', function () {
     return gulp.src([ // Берем все необходимые библиотеки
-      'app/js/fancyBox-3.0/core.js',
-      'app/js/fancyBox-3.0/media.js',
-      'app/js/fancyBox-3.0/guestures.js',
-      'app/js/fancyBox-3.0/slideshow.js',
-      'app/js/fancyBox-3.0/fullscreen.js',
-      'app/js/fancyBox-3.0/thumbs.js',
+      //https://github.com/fancyapps/fancybox
       // bootstrap full
-      'app/js/bootstrap.js',
+      'node_modules/bootstrap/js/dist/util.js',
+      'node_modules/bootstrap/js/dist/alert.js',
+      'node_modules/bootstrap/js/dist/button.js',
+      'node_modules/bootstrap/js/dist/carousel.js',
+      'node_modules/bootstrap/js/dist/collapse.js',
+      'node_modules/bootstrap/js/dist/dropdown.js',
+      'node_modules/bootstrap/js/dist/modal.js',
+      'node_modules/bootstrap/js/dist/scrollspy.js',
+      'node_modules/bootstrap/js/dist/tab.js',
+      'node_modules/bootstrap/js/dist/tooltip.js',
+      'node_modules/bootstrap/js/dist/popover.js',
     ])
       .pipe(concat('libs.min.js'))  // Собираем их в кучу в новом файле libs.min.js
       .pipe(uglifyjs()) // Сжимаем JS файл

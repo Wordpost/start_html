@@ -22,8 +22,5 @@
     "wow": "wowjs#^1.1.2",
     "owl.carousel": "^2.2.1",
     "font-awesome-sass": "^4.7.0"
-  },
-  "devDependencies": {
-    "bootstrap": "v4.0.0-alpha.6"
   }
 }

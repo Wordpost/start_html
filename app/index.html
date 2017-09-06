@@ -1,146 +1,137 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>Главная</title>
-  <meta name="description" content="description">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-  <link rel="stylesheet" href="css/libs.css" />
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="description" content="description">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="css/libs.css" />
 </head>
-  <body>
+	<body>
 
-    <header id="header">
-      <nav class="navbar">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar">
-          </button>
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand" href="#">Navbar</a>
 
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#!">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!" data-toggle="modal" data-target="#myModal">modal</a>
-              </li>
-            </ul>
-          </div>
-          <!-- navbar -->
-        </div>
-        <!-- container -->
-      </nav>
-    </header>
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="modal" data-target="#myModal">Disabled</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-    <main id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-3">
-            <div class="p-4 bg-danger text-center"><a class="text-white" href="http://v4-alpha.getbootstrap.com/layout/grid/">Grid system</a></div>
-          </div>
-        </div>
-        <div class="row text-white mb-4">
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam, dolore voluptate nemo explicabo quibusdam vitae eveniet ut nobis, odit ipsa ducimus quisquam perspiciatis dicta dolorum sunt! Error, ipsam, dolorum!</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eius voluptatem optio architecto nesciunt minus blanditiis dolore voluptate at cumque autem saepe possimus repellat harum aliquid, rem, consectetur exercitationem perferendis!</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum qui explicabo, ullam, nam deserunt maxime ad in aut ex saepe. Quo maiores unde ipsum excepturi iste nihil dolor atque.</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, voluptatem! Hic doloribus nam quisquam, ab vero sed blanditiis! Hic, praesentium nam nemo. Beatae, necessitatibus culpa. Ullam perspiciatis minima vitae temporibus?</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam animi aut nihil ipsum! Minima quae sint ullam in recusandae distinctio provident nostrum voluptatibus adipisci. Saepe amet, sapiente quasi veritatis?</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam, dolore voluptate nemo explicabo quibusdam vitae eveniet ut nobis, odit ipsa ducimus quisquam perspiciatis dicta dolorum sunt! Error, ipsam, dolorum!</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eius voluptatem optio architecto nesciunt minus blanditiis dolore voluptate at cumque autem saepe possimus repellat harum aliquid, rem, consectetur exercitationem perferendis!</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum qui explicabo, ullam, nam deserunt maxime ad in aut ex saepe. Quo maiores unde ipsum excepturi iste nihil dolor atque.</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, voluptatem! Hic doloribus nam quisquam, ab vero sed blanditiis! Hic, praesentium nam nemo. Beatae, necessitatibus culpa. Ullam perspiciatis minima vitae temporibus?</div></div>
-          <div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam animi aut nihil ipsum! Minima quae sint ullam in recusandae distinctio provident nostrum voluptatibus adipisci. Saepe amet, sapiente quasi veritatis?</div></div>
-        </div>
+		<main id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-3">
+						<div class="p-4 bg-danger text-center"><a class="text-white" href="http://v4-alpha.getbootstrap.com/layout/grid/">Grid system</a></div>
+					</div>
+				</div>
+				<div class="row text-white mb-4">
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam, dolore voluptate nemo explicabo quibusdam vitae eveniet ut nobis, odit ipsa ducimus quisquam perspiciatis dicta dolorum sunt! Error, ipsam, dolorum!</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eius voluptatem optio architecto nesciunt minus blanditiis dolore voluptate at cumque autem saepe possimus repellat harum aliquid, rem, consectetur exercitationem perferendis!</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum qui explicabo, ullam, nam deserunt maxime ad in aut ex saepe. Quo maiores unde ipsum excepturi iste nihil dolor atque.</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, voluptatem! Hic doloribus nam quisquam, ab vero sed blanditiis! Hic, praesentium nam nemo. Beatae, necessitatibus culpa. Ullam perspiciatis minima vitae temporibus?</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam animi aut nihil ipsum! Minima quae sint ullam in recusandae distinctio provident nostrum voluptatibus adipisci. Saepe amet, sapiente quasi veritatis?</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ullam, dolore voluptate nemo explicabo quibusdam vitae eveniet ut nobis, odit ipsa ducimus quisquam perspiciatis dicta dolorum sunt! Error, ipsam, dolorum!</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eius voluptatem optio architecto nesciunt minus blanditiis dolore voluptate at cumque autem saepe possimus repellat harum aliquid, rem, consectetur exercitationem perferendis!</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rerum qui explicabo, ullam, nam deserunt maxime ad in aut ex saepe. Quo maiores unde ipsum excepturi iste nihil dolor atque.</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, voluptatem! Hic doloribus nam quisquam, ab vero sed blanditiis! Hic, praesentium nam nemo. Beatae, necessitatibus culpa. Ullam perspiciatis minima vitae temporibus?</div></div>
+					<div class="col"><div class="bg-primary p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam animi aut nihil ipsum! Minima quae sint ullam in recusandae distinctio provident nostrum voluptatibus adipisci. Saepe amet, sapiente quasi veritatis?</div></div>
+				</div>
 
-        <div style="height: 100px;" class="row bg-info mb-4">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-        </div>
-        <div style="height: 100px;" class="row align-items-center align-content-between bg-info mb-4">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-        </div>
-        <div style="height: 100px;" class="row align-items-end bg-info mb-4">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--main-->
+				<div style="height: 100px;" class="row bg-info mb-4">
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+				</div>
+				<div style="height: 100px;" class="row align-items-center align-content-between bg-info mb-4">
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+				</div>
+				<div style="height: 100px;" class="row align-items-end bg-info mb-4">
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+					<div class="col">
+						One of three columns
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--main-->
 
-    <footer id="footer">
-      <hr>
-      <div class="container">
-        <div class="text-muted text-center py-2">© www.weban.ru все права защищены</div>
-      </div>
-    </footer>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+		<footer id="footer">
+			<hr>
+			<div class="container">
+				<div class="text-muted text-center py-2">© www.weban.ru все права защищены</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!--[if lte IE 9]>
-      <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
-      <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
-    <![endif]-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js">
+		<![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
