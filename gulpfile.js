@@ -55,6 +55,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
       server: { // Определяем параметры сервера
         baseDir: './app'  // Директория для сервера - app
       },
+      open: false,
       notify: false // Отключаем уведомления
     });
   });
@@ -64,17 +65,19 @@ var gulp        = require('gulp'),              // Подключаем Gulp
     return gulp.src([ // Берем все необходимые библиотеки
       //https://github.com/fancyapps/fancybox
       // bootstrap full
+      //'node_modules/popper.js/dist/popper.js',
+      //'node_modules/bootstrap/js/dist/js/bootstrap.js',
       'node_modules/bootstrap/js/dist/util.js',
       'node_modules/bootstrap/js/dist/alert.js',
       'node_modules/bootstrap/js/dist/button.js',
       'node_modules/bootstrap/js/dist/carousel.js',
       'node_modules/bootstrap/js/dist/collapse.js',
-      'node_modules/bootstrap/js/dist/dropdown.js',
+      //'node_modules/bootstrap/js/dist/dropdown.js',
       'node_modules/bootstrap/js/dist/modal.js',
       'node_modules/bootstrap/js/dist/scrollspy.js',
       'node_modules/bootstrap/js/dist/tab.js',
-      'node_modules/bootstrap/js/dist/tooltip.js',
-      'node_modules/bootstrap/js/dist/popover.js',
+      //'node_modules/bootstrap/js/dist/tooltip.js',
+      //'node_modules/bootstrap/js/dist/popover.js',
     ])
       .pipe(concat('libs.min.js'))  // Собираем их в кучу в новом файле libs.min.js
       .pipe(uglifyjs()) // Сжимаем JS файл
@@ -87,6 +90,7 @@ var gulp        = require('gulp'),              // Подключаем Gulp
       .pipe(html({ prefix: '@@', basepath: '@file' }))
       .pipe(gulp.dest('app'))
       .pipe(browserSync.reload({  // Обновляем CSS на странице при изменении
+        
         stream: true
       }));
   });
@@ -128,7 +132,9 @@ var gulp        = require('gulp'),              // Подключаем Gulp
 
 // Наблюдение за проектом
   gulp.task('watch', function () {
-    gulp.watch( 'app/sass/**/*.scss', ['sass'] );         // Наблюдение за scss файлами в папке sass
+    gulp.watch('app/sass/**/*.scss', function(event, cb) {
+      setTimeout(function(){gulp.start('sass');},500) // задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске
+    });// Наблюдение за scss файлами в папке sass
     gulp.watch( 'app/html/**/*.*', ['html'] );    // Наблюдение за HTML файлами в корне проекта
     gulp.watch( 'app/images/icon/*.png', ['sprite'] );    // Наблюдение за иконками для спрайта
     gulp.watch('app/libs/**/*.js', ['js']); // Наблюдение за JS файлами в папке libs

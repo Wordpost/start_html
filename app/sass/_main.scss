@@ -1,29 +1,4 @@
-html {
-  @include media-breakpoint-up(sm) {
-    font-size: $font-size-root-sm;
-  }
-  @include media-breakpoint-up(md) {
-    font-size: $font-size-root-md;
-  }
-  @include media-breakpoint-up(lg) {
-    font-size: $font-size-root-lg;
-  }
-  @include media-breakpoint-up(xl) {
-    font-size: $font-size-root-xl;
-  }
-}
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  position: relative;
-}
-main {
-  flex: 1 0 auto;
-}
-#header,#footer {
-  flex-shrink: 0;
-}
+
 // использовать нужно в каждом файле, тоесть если пишешь стили в файле header.scss
 // то в конце файла добавляешь медиа для адаптивности
 // чтобы было понятно где искать стили отвечающие за адаптив шапки
