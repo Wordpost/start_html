@@ -1,35 +1,32 @@
 {
-  "name": "Weban",
-  "version": "2.2.0",
-  "description": "Template for web",
+  "name": "gulp_html_temlate",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Wordpost",
+  "author": "wordpost",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-cache": "^0.4.6",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-file-include": "^1.0.0",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-rename": "^1.2.2",
+    "browser-sync": "^2.23.6",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^2.3.1",
-    "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^5.0.0",
-    "node-bourbon": "^4.2.8"
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.9.0",
+    "normalize-scss": "^7.0.1",
+    "smart-grid": "^2.0.1"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
-    "gulp": "^3.9.1",
-    "gulp.spritesmith": "^6.2.1",
-    "popper.js": "^1.12.5"
-  }
+    "vue": "^2.5.13"
+  },
+  "optionalDependencies": {}
 }

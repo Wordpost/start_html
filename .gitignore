@@ -1,5 +1,2 @@
-/node_modules/
-/dist/
-/app/libs
-/app/*.html
-.idea
+node_modules
+build
