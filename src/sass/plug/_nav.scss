@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  &-link {
+    display: block;
+  }
+  &-tabs {
+    .nav-item {
+
+    }
+    .nav-link {
+      &.active {
+
+      }
+    }
+  }
+}
+.tab {
+  &-content {
+    >.tab-pane {
+      display: none;
+    }
+    >.active {
+      display: block;
+    }
+  }
+}

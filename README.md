@@ -46,6 +46,11 @@
 
 <hr>
 
+<h3>For windows 10</h3>
+`npm install -g windows-build-tools`
+
+<hr>
+
 <h3>Useful commands</h3>
 
 `Delete folder 'build': gulp clean ;`

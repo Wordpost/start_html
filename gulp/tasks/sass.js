@@ -8,8 +8,7 @@ module.exports = function() {
 			cascade: false,
 			grid: true
 		}))
-		.pipe($.gcmq())
-		.pipe($.loadPlugin.csso())
+		//.pipe($.loadPlugin.csso())
 		// .pipe($.loadPlugin.sourcemaps.write())
 		.pipe($.gulp.dest($.path.build.css))
 		.pipe($.browserSync.reload({
