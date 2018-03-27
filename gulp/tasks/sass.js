@@ -1,6 +1,6 @@
 module.exports = function() {
 	$.gulp.task('sass', function() {
-		return $.gulp.src($.path.src.sass)
+		return $.gulp.src($.path.src.sass, {since: $.gulp.lastRun('sass')})
 		// .pipe($.loadPlugin.sourcemaps.init())
 		.pipe($.loadPlugin.sass().on('error', $.loadPlugin.sass.logError))
 		.pipe($.loadPlugin.autoprefixer({

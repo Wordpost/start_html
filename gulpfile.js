@@ -18,6 +18,7 @@ global.$ = {
 			sass:     'src/sass/main.scss',
 			jsLibs:   'src/js/libs.js',
 			jsCustom: 'src/js/main.js',
+			jsFile:   'src/js/libs/*.js',
 			img:      'src/img/**/*.*',
 			sprites:  'src/img/sprites/*.*',
 			fonts:    'src/fonts/**/*.*'
@@ -27,6 +28,7 @@ global.$ = {
 			sass:     'src/sass/**/*.*',
 			jslibs:   'src/js/libs.js',
 			jsCustom: 'src/js/main.js',
+			jsFile:   'src/js/libs/*.js',
 			img:      'src/img/**/*.*',
 			sprites:  'src/img/sprites/*.*',
 			fonts:    'src/fonts/**/*.*'
@@ -39,7 +41,7 @@ $.path.tasks.forEach(function(taskPath) {
 });
 
 $.gulp.task('default', $.gulp.series(
-	$.gulp.parallel('html', 'sass', 'js-custom', 'js-libs', 'img', 'fonts', 'sprites'),
+	$.gulp.parallel('html', 'sass', 'js-custom', 'js-libs', 'js-file', 'img', 'fonts', 'sprites'),
 	$.gulp.parallel('watch', 'server')
 	)
 );
