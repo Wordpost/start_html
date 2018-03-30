@@ -69,7 +69,7 @@ $.path.tasks.forEach(function(taskPath) {
 	require(taskPath)();
 });
 
-$.smartgrid('./src/sass/plug/', $.path.gridSettings);
+$.smartgrid('./src/sass/plug/grid/', $.path.gridSettings);
 
 $.gulp.task('default', $.gulp.series(
 	$.gulp.parallel('html', 'js-custom', 'js-libs', 'js-file', 'fonts', 'sprites', 'svg', 'svg-sass', 'sass', 'img'),

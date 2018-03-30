@@ -5,7 +5,7 @@ module.exports = function() {
       preview: false,
       selector: "icon-%f",
       svg: {
-        sprite: 'sass/plug/svg/symbols.svg'
+        sprite: 'sass/plug/svg/sprites.svg'
       },
       cssFile: "sass/plug/svg/_sprites.scss",
       templates: {
