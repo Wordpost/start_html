@@ -4,6 +4,7 @@ global.$ = {
 	gulp: require('gulp'),
 	loadPlugin: require('gulp-load-plugins')(),
 	browserSync: require('browser-sync').create(),
+	svgSprite: require('gulp-svg-sprites'),
 	path: {
 		tasks: require('./gulp/config/tasks.js'),
 		build: {
@@ -21,6 +22,7 @@ global.$ = {
 			jsFile:   'src/js/libs/*.js',
 			img:      'src/img/**/*.*',
 			sprites:  'src/img/sprites/*.*',
+			svg:      'src/img/svg-icon/*.svg',
 			fonts:    'src/fonts/**/*.*'
 		},
 		watch: {
@@ -31,6 +33,7 @@ global.$ = {
 			jsFile:   'src/js/libs/*.js',
 			img:      'src/img/**/*.*',
 			sprites:  'src/img/sprites/*.*',
+			svg:      'src/img/svg-icon/*.svg',
 			fonts:    'src/fonts/**/*.*'
 		}
 	}
@@ -41,7 +44,7 @@ $.path.tasks.forEach(function(taskPath) {
 });
 
 $.gulp.task('default', $.gulp.series(
-	$.gulp.parallel('html', 'sass', 'js-custom', 'js-libs', 'js-file', 'img', 'fonts', 'sprites'),
+	$.gulp.parallel('html', 'sass', 'js-custom', 'js-libs', 'js-file', 'img', 'fonts', 'sprites', 'svg', 'svg-sass'),
 	$.gulp.parallel('watch', 'server')
 	)
 );

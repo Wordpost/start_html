@@ -1,6 +1,6 @@
 {
   "name": "html_template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Start html template for web",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,15 @@
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^4.1.0",
+    "gulp-cheerio": "^0.6.3",
     "gulp-clean": "^0.4.0",
     "gulp-csso": "^3.0.1",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^0.6.1",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprites": "^4.1.2",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.9.0"

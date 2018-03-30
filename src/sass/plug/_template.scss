@@ -1,0 +1,18 @@
+.<%=common %> {
+ 	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor; 
+}
+
+<% _.forEach(svg, function(svgItem) { %>
+
+.<%=common %>.<%=svgItem.name%> {
+  width: <%= svgItem.relWidth * 10 / 16 %>em;
+  height: <%= svgItem.relHeight * 10 / 16 %>em;
+}
+
+@mixin <%=common %>-<%=svgItem.name%>(){
+  @extend .<%=svgItem.name%>;
+}
+<% }); %>

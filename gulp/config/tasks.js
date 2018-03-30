@@ -10,5 +10,7 @@ module.exports = [
 	'./gulp/tasks/tinypng',
 	'./gulp/tasks/img',
 	'./gulp/tasks/sprites',
+	'./gulp/tasks/svg',
+	'./gulp/tasks/svg-sass',
 	'./gulp/tasks/fonts',
 ];
