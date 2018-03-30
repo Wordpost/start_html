@@ -17,16 +17,6 @@
 }
 
 
-.icon.icon-arrow-left-diz {
-  width: 0.5em;
-  height: 0.875em;
-}
-
-@mixin icon-icon-arrow-left-diz(){
-  @extend .icon-arrow-left-diz;
-}
-
-
 .icon.icon-arrow-right {
   width: 0.5em;
   height: 0.875em;
@@ -34,14 +24,4 @@
 
 @mixin icon-icon-arrow-right(){
   @extend .icon-arrow-right;
-}
-
-
-.icon.icon-arrow-right-diz {
-  width: 0.5em;
-  height: 0.875em;
-}
-
-@mixin icon-icon-arrow-right-diz(){
-  @extend .icon-arrow-right-diz;
 }

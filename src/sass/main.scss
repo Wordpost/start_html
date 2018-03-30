@@ -5,7 +5,7 @@
 @import 'plug/fonts';
 @import 'plug/reboot';
 @import 'plug/rem';
-
+@import "plug/smart-grid";
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 @import "../../node_modules/bootstrap/scss/grid";
@@ -18,7 +18,7 @@
 @import "plug/modal";
 @import "plug/nav";
 @import '../../node_modules/bootstrap/scss/transitions';
-@import 'plug/sprites';
+@import 'plug/svg/sprites';
 
 /* Global styles start*/
 
