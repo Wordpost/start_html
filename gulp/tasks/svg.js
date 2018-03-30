@@ -12,6 +12,7 @@ module.exports = function() {
 			.pipe($.loadPlugin.replace('&gt;', '>'))
 		.pipe($.svgSprite({
 			mode: "symbols",
+			preview: false,
 			selector: "icon-%f",
 			svg: {
 				symbols: "img/symbols.svg",

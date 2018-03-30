@@ -4,9 +4,6 @@ module.exports = function() {
     .pipe($.svgSprite({
       preview: false,
       selector: "icon-%f",
-      svg: {
-        sprite: 'symbols.svg'
-      },
       cssFile: "sass/plug/_sprites.scss",
       templates: {
         css: require("fs").readFileSync("src/sass/plug/_template.scss", "utf-8")
