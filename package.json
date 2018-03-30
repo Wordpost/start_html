@@ -1,6 +1,6 @@
 {
   "name": "html_template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Start html template for web",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,8 @@
     "gulp-svg-sprites": "^4.1.2",
     "gulp-tinypng": "^1.0.2",
     "gulp-uglify": "^3.0.0",
-    "gulp.spritesmith": "^6.9.0"
+    "gulp.spritesmith": "^6.9.0",
+    "smart-grid": "^2.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0"
